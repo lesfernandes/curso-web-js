@@ -20,4 +20,4 @@ console.log(media.toFixed(2))
 console.log(media.toString(2))
 
 console.log(typeof media)
-console.log(typeof Number)
+console.log(typeof Number)  
