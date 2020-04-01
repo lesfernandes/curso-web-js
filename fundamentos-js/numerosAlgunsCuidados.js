@@ -1,6 +1,11 @@
 console.log(7/0)
 
+// Converte e realiza a operação.
 console.log("10"/2)
+console.log('3'-2)
+
+//Concatena, pois a string possui prioridade.
+console.log('3'+2)
 
 console.log("Show!"*2)
 
