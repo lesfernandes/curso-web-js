@@ -1,0 +1,8 @@
+Variáveis definidas com a palavra reservada 'var' possuem:
+    - escopo global 
+    - escopo de função
+
+Já as variáveis definidas com a palavra reservada 'let' possuem:
+    - escopo global
+    - escopo de função
+    - escopo de bloco (faz muita diferença)
