@@ -4,14 +4,21 @@ quantos anos isso acontecerá. Utilize centímetros para as unidades de medida.
  */
 
 function comparaCrescimento(altura1, altura2, taxa1, taxa2) {
-    let maiorAltura
-    let menorAltura
-
-    if(altura1 > altura2) {
-        maiorAltura = altura1
-        menorAltura = altura2
+    if (altura1 == altura2) {
+        return "As crianças possuem as mesmas alturas."
     } else {
-        maiorAltura = altura2
-        menorAltura = altura1
+        let menorAltura = (altura1 < altura2) ? altura1 : altura2
+        let taxaMenorAltura = (altura1 < altura2) ? taxa1 : taxa2
+        let maiorAltura = (altura2 > altura1) ? altura2 : altura1
+        let anos = 0
+        
+        while(menorAltura < maiorAltura) {
+            menorAltura += taxaMenorAltura
+            anos ++
+        }
+
+        return anos + " anos para a menor criança ultrapassar a maior."
     }
 }
+
+console.log(comparaCrescimento(120, 130, 5, 2))
